@@ -2,7 +2,11 @@ require "marcjaramillo_palindrome/version"
 
 module MarcjaramilloPalindrome
   def palindrome?
-    downcased_string == downcased_string.reverse
+    if downcased_string.empty?
+      false
+    else
+      downcased_string == downcased_string.reverse
+    end
   end
 
   private

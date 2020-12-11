@@ -24,4 +24,8 @@ class MarcjaramilloPalindromeTest < Minitest::Test
   def test_integer_palindrome
     assert 12321.palindrome?
   end
+
+  def test_if_blank
+    refute "".palindrome?
+  end
 end
